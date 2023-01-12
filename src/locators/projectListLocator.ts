@@ -1,5 +1,5 @@
+import { Locators } from "./types";
 import { getTestId } from "../utils/getTestId";
-import { Locators } from "../types";
 
 interface ProjectListLocator {
   itemLink: string;

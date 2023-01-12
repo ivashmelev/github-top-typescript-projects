@@ -1,5 +1,5 @@
 import test, { expect, Page } from "@playwright/test";
-import { projectListLocator } from "./locators/projectListLocator";
+import { projectListLocator } from "../src/locators/projectListLocator";
 import { baseUrl } from "./constants";
 
 const waitForGetProjectListResponse = (page: Page) => {
