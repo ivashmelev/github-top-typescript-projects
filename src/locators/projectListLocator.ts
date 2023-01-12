@@ -1,16 +1,14 @@
 import { Locators } from "./types";
-import { getTestId } from "../utils/getTestId";
+import { concatenateLocators } from "../utils/concatenateLocators";
 
 interface ProjectListLocator {
+  list: string;
   itemLink: string;
-  paginationItem: string;
-  paginationSize: string;
 }
 
-const prefix = getTestId(Locators.Project, Locators.List);
+const prefix = concatenateLocators(Locators.Project, Locators.List);
 
 export const projectListLocator: ProjectListLocator = {
-  itemLink: getTestId(prefix, Locators.Item, Locators.Link),
-  paginationItem: getTestId(prefix, Locators.Pagination, Locators.Item),
-  paginationSize: getTestId(prefix, Locators.Pagination, Locators.Size),
+  list: prefix,
+  itemLink: concatenateLocators(prefix, Locators.Item, Locators.Link),
 };

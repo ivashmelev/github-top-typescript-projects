@@ -1,4 +1,4 @@
-# Github Top Typescript Projects
+# GitHub Top Typescript Projects
 
 Приложение для просмотра самых популярных (по звездам) TS проектов Github
 
